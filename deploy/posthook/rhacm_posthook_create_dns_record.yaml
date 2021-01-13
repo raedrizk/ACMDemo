@@ -3,13 +3,13 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: rhacm-posthook-linux-hello-world
+  name: rhacm-posthook-create-dns-record
   namespace: simpleweb
   labels:
     app.kubernetes.io/name: simpleweb
 spec:
   tower_auth_secret: toweraccess
-  job_template_name: rhacm_posthook_linux_hello_world
+  job_template_name: rhacm_posthook_create_dns_record
   extra_vars:
     app_name: simpleweb
     godaddy_dns_record_name: simpleweb
