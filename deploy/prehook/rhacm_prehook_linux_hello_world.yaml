@@ -2,7 +2,7 @@
 apiVersion: tower.ansible.com/v1alpha1
 kind: AnsibleJob
 metadata:
-  name: rhacm-prehook-linux-hello-world.yaml
+  name: rhacm-prehook-linux-hello-world
   namespace: simpleweb
   labels:
     app.kubernetes.io/name: simpleweb
