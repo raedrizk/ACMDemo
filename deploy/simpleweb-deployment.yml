@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    name: simpleweb
+    app.kubernetes.io/name: simpleweb
+  name: simpleweb
+  namespace: simpleweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: simpleweb
+      app.kubernetes.io/name: simpleweb
+  template:
+    metadata:
+      labels:
+        name: simpleweb
+        app.kubernetes.io/name: simpleweb
+    spec:
+      containers:
+      - image: quay.io/raedrizk/simpleweb:1.0
+        name: simpleweb
+        ports:
+        - containerPort: 80
+          name: http
