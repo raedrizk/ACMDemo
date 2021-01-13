@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: godaddy-dns-route
+  namespace: simpleweb
+  labels:
+    app.kubernetes.io/name: simpleweb
+spec:
+  host: simpleweb.rsoliman.com
+  path: "/"
+  to:
+    kind: Service
+    name: simpleweb
