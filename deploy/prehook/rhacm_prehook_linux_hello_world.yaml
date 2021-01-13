@@ -1,0 +1,14 @@
+---
+apiVersion: tower.ansible.com/v1alpha1
+kind: AnsibleJob
+metadata:
+  name: rhacm-prehook-linux-hello-world.yaml
+  namespace: simpleweb
+  labels:
+    app.kubernetes.io/name: simpleweb
+spec:
+  tower_auth_secret: toweraccess
+  job_template_name: rhacm_prehook_linux_hello_world
+  extra_vars:
+    app_name: simpleweb
+    message: "Updated by Red Hat Advanced Cluster Management for Kubernetes"
