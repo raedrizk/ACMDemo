@@ -14,5 +14,5 @@ spec:
     app_name: simpleweb
     godaddy_dns_record_name: simpleweb
     godaddy_domain: rsoliman.com
-    service_route: "{{ app_name }}-simpleweb.apps.rsoliman-ocp.mydemo.run"
+    service_route: simpleweb-simpleweb.apps.rsoliman-ocp.mydemo.run
     message: "Updated by Red Hat Advanced Cluster Management for Kubernetes"
