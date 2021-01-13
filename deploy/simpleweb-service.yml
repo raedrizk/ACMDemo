@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleweb
+  namespace: simpleweb
+  labels:
+    name: simpleweb
+    app.kubernetes.io/name: simpleweb
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+  selector:
+    name: simpleweb
+    app.kubernetes.io/name: simpleweb
