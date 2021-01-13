@@ -18,6 +18,8 @@ spec:
         name: simpleweb
         app.kubernetes.io/name: simpleweb
     spec:
+      serviceAccount: simpleweb-sa
+      serviceAccountName: simpleweb-sa
       containers:
       - image: quay.io/raedrizk/simpleweb:3.0
         name: simpleweb
