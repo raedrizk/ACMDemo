@@ -12,4 +12,7 @@ spec:
   job_template_name: rhacm_posthook_linux_hello_world
   extra_vars:
     app_name: simpleweb
+    godaddy_dns_record_name: simpleweb
+    godaddy_domain: rsoliman.com
+    service_route: "{{ app_name }}-simpleweb.apps.rsoliman-ocp.mydemo.run"
     message: "Updated by Red Hat Advanced Cluster Management for Kubernetes"
