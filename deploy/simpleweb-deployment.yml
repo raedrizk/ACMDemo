@@ -21,7 +21,7 @@ spec:
       serviceAccount: simpleweb-sa
       serviceAccountName: simpleweb-sa
       containers:
-      - image: quay.io/raedrizk/simpleweb:1.0
+      - image: quay.io/raedrizk/simpleweb:2.0
         name: simpleweb
         ports:
         - containerPort: 80
